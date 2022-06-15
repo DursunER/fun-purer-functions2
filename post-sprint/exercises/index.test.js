@@ -73,6 +73,7 @@ describe('impure functions', () => {
       expect(input2).toEqual(['c', 'd']);
     });
   });
+  
   describe('addItem()', () => {
     test('will add an item on to the end of an array', () => {
       expect(addItem(['a', 'b', 'c'], 'd')).toEqual(['a', 'b', 'c', 'd']);
@@ -82,6 +83,7 @@ describe('impure functions', () => {
       expect(addItem(input)).not.toBe(input);
     });
   });
+
   describe('removeAges()', () => {
     test('will work for a single person object', () => {
       const people = [{ name: 'Fraz', age: 30 }];

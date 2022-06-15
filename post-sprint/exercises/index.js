@@ -20,16 +20,17 @@ function joinArrays(arr1, arr2) {
 }
 
 function addItem(array, item) {
-  if (!item) return array;
+  
+   if (!item) return array;
   array.push(item);
   return array;
 }
 
 function removeAges(people) {
-  people.forEach(function (person) {
-    delete person.age;
+ const removedPerson = people.filter(person => {
+    return person
   });
-  return people;
+  
 }
 
 module.exports = {
